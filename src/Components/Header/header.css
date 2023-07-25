@@ -1,0 +1,401 @@
+
+
+#sticky-top-header{
+
+    transition: top .3s ease-in-out;
+    transition-delay: .3s;
+    z-index: 1035;
+}
+
+
+/* top most discount header---- */
+.discount-header {
+    font-size: 10px;
+    line-height: 1.7rem;
+    letter-spacing: .05rem;
+    color: white;
+    font-weight: 700;
+    height: 100%;
+    cursor: pointer;
+    background-color: #000000;
+
+}
+
+#dis-header {
+    transition: opacity .4s;
+}
+
+/* offcanvas discount header */
+.offCanvas {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #ffffff;
+    position: fixed;
+    z-index: 1;
+    height: 350px;
+    top: -350px;
+    transition: transform .3s ease-in-out;
+    overflow: auto;
+}
+
+.openCanvas {
+    transform: translateY(350px);
+}
+
+.close-button {
+    cursor: pointer;
+    border: solid black 1px;
+    padding: 10px 18px;
+}
+.offCanvas-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding:  0 !important;
+    margin: 0 !important;
+}
+
+
+.offcanvash6 {
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: .05rem;
+
+}
+
+.offcanvas-linkh6 {
+    display: inline;
+    margin-top: 25px;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: .05rem;
+    text-decoration: underline;
+}
+
+.offcanvas-linkh6:hover {
+    background: #000;
+    color: #ffffff;
+}
+
+/* header-top --------------------- */
+
+.header-top {
+    display: flex;
+    justify-content: end;
+}
+
+.header-top>ul>li {
+    margin: 7px 14px;
+    font-size: 10px;
+}
+
+
+.header-top>ul>li>a:hover {
+    text-decoration: underline;
+
+}
+
+
+
+
+
+/* header -bottom -----logo */
+.adidas-icon {
+    position: relative;
+    width: 65px;
+    top: -15px;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+.dropMENU {
+    display: flex;
+}
+
+.header-bottom {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+
+.header-bottom>div>ul>li {
+    margin: 7px 13px;
+    margin-bottom: 0;
+    padding-bottom: 15px;
+    letter-spacing: .05rem;
+    font-size: 15px;
+
+}
+
+.header-bottom>div>ul>li:hover {
+    border-bottom: 4px solid;
+    padding-bottom: 11px;
+
+
+}
+
+.header-bottom>div>ul {
+    margin: 0;
+    margin-left: 200px;
+    padding: 0;
+}
+
+
+
+.search-group {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.search {
+    transition: border ease 1s;
+    padding: 0 30px 0 10px;
+    border: solid thin #e0e3e6;
+    background-color: #e0e3e6;
+    font-size: 14px;
+    height: 35px;
+    max-width: fit-content;
+    width: 170px;
+    position: relative;
+}
+
+.search:focus {
+
+    border: solid thin #636566;
+    outline: 0;
+
+}
+
+.search-icon {
+    position: absolute;
+    right:0;
+    padding-right: 5px;
+}
+.search-mobile-input{
+    width: 100%;
+    height: 100%;
+    border: none;
+    background-color: transparent;
+}
+.xmark-mob{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+.search-mobile-input:focus{
+    outline: 0;
+}
+.search-mob-form{
+    width: 100%;
+}
+.mobile-search-icon {
+    display: none;
+}
+
+.desktop-heart-icon {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.header-cart{
+    display: block;
+    position: relative;
+}
+/* MENU DROPDOWN============> */
+.dropdown {
+    position: static;
+}
+.dropdown a{
+
+    padding: 20px;
+}
+
+.dropdown-content {
+    background-color: #ffffff;
+    width: 100%;
+    margin: 16px 0px;
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    display: none;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+
+
+
+/* MENU DROPDOWN CONTENT ===============>*/
+.drop-a {
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.drop-lia {
+    font-size: 13px;
+
+    cursor: pointer;
+}
+
+.drop-lia:hover,
+.drop-a:hover {
+    text-decoration: underline;
+}
+
+
+/* HAMBURGER MENU OFFCANVAS */
+.offCanvas-hamburger{
+    width: 100%;
+    background-color: #ffffff;
+    position: fixed;
+    z-index: 1;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transition: transform .3s ease-in-out;
+    transition-delay: .2s;
+    transform: translateX(-100%);
+
+}
+.openCanvas-hamburger {
+    transform: translateX(0%);
+}
+.hamburger-closeButton{
+    position: absolute;
+    right: 30px;
+    top: 20px;
+}
+.adidas-icon-hamburger{
+    width: 50px;
+  
+
+}
+
+.scroll{
+    height: calc(100% - 90px);
+    overflow: scroll;
+}
+
+/* OFFCANVAS SUBMENU HAMBUREGER */
+.offCanvas-submenu{
+    width: 100%;
+    background-color: #ffffff;
+    position: fixed;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transition: transform .5s ease-in-out;
+    transition-delay: .2s;
+    transform: translateX(200%);
+
+}
+
+.openCanvas-submenu {
+    transform: translateX(0%);
+}
+
+/* MOBILE SEARCH OFFCANVAS */
+.mobile-search-offcanvas {
+    width: 100%;
+    background-color: #ffffff;
+    position: fixed;
+    z-index: 1;
+    height: 100%;
+    top: 0;
+    right: -100%;
+    transition: transform .3s ease-in-out;
+    transition-delay: .2s;
+
+}
+.openCanvas-mobile-search {
+    transform: translateX(-100%);
+}
+
+/* MEDIA QUERY SCREEN WIDTH */
+@media (max-width: 1450px) {
+    .header-bottom>div>ul>li {
+        margin-right: 0px;
+    }
+
+    .header-bottom>div>ul {
+
+        margin-left: 0px;
+    }
+
+}
+
+
+@media (max-width:1007px) {
+
+    /* dropdown menu */
+    .dropMENU,
+    .search-group,
+    .header-top,
+    .desktop-heart-icon
+    {
+        display: none;
+    }
+    .dropdown:hover .dropdown-content-cart {
+        display: none;
+    }
+
+    /* discount header arrow position */
+    .discount-header{
+        font-size: 12px;
+    }
+    .dis-arrowDown {
+        position: absolute;
+        right: 7px;
+    }
+
+    .mobile-menu,
+    .mobile-search-icon {
+        display: flex;
+        align-items: center;
+
+    }
+
+    .header-bottom {
+        align-items: center;
+        padding: 10px 0px;
+    }
+
+    .adidas-icon {
+        position: absolute;
+        top: 54px;
+        display: flex;
+        justify-content: center;
+        width: 50px;
+        /* top: 0; */
+    }
+
+    .offCanvas{
+        height: 100%;
+        top: -100%   ;
+
+    }
+    .openCanvas {
+        transform: translateY(100%);
+    }
+
+    .offCanvas-content{
+        display: flex;
+        flex-direction: column;
+        padding: 30px;
+        
+    }
+    .offCanvas-content div{
+        padding-bottom: 80px;
+        width: 85%;
+    }
+
+}
